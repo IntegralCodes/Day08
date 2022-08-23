@@ -1,4 +1,4 @@
-class Member:
+class Member: #나는 개똥벌래
     def __init__(self, n, m):
         self.name = n
         self.count = m
