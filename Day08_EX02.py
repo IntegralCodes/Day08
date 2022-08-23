@@ -5,7 +5,10 @@ class Member: #나는 개똥벌래
     def enter(self):
         print("회원 {}님 이 입장하였습니다.".format(self.name))
         self.count = self.count + 1
+        Member.totalCount = Member.totalCount + 1
         print("{}님 입장 횟수는 {}회 입니다.".format(self.name, self.count))
+        print("총 입장 횟수 : {}회".format(Member.totalCount))
+        print()
 
 jong = Member("종민", 0)
 jong.enter()
